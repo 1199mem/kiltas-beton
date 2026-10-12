@@ -84,7 +84,7 @@
       </div>
     </div>
 
-    <!-- Mobil Açılır Menü Çekmecesi -->
+    <!-- Mobil Menü Çekmecesi -->
     <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-3 font-semibold text-slate-800">
       <a href="#hero" class="block py-2 text-amber-600 border-b border-gray-50 mobile-link">Ana Sayfa</a>
       <a href="#urunler" class="block py-2 border-b border-gray-50 mobile-link">Kilit Taşı Modelleri</a>
@@ -309,4 +309,227 @@
 
             <div>
               <label class="block text-xs font-bold uppercase text-gray-300 mb-2">Kullanım Amacı</label>
-              <select id="calcUsage" class="w-full bg-slate-900 text-white font-medium text-sm px-4 py-3 rounded-xl border border-slate-600 focus:border-amber-5
+              <select id="calcUsage" class="w-full bg-slate-900 text-white font-medium text-sm px-4 py-3 rounded-xl border border-slate-600 focus:border-amber-500 focus:outline-none">
+                <option value="6">Otopark, Site İçi Yol, Bahçe (6 cm Önerilir)</option>
+                <option value="8">Ağır Tonaj, Kamyon Yolu, Sanayi Sahası (8 cm Zorunlu)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Canlı Hesap Sonuç Paneli -->
+          <div class="md:col-span-6 bg-slate-900/90 p-6 rounded-2xl border border-slate-700/80 space-y-4">
+            <div class="text-xs text-amber-400 font-bold uppercase tracking-wider">Tahmini Sipariş Dökümü</div>
+            
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-slate-800/60 p-3.5 rounded-xl border border-slate-700/50">
+                <div class="text-gray-400 text-xs">Yaklaşık Palet</div>
+                <div id="resPalet" class="text-2xl font-black text-white mt-1">31 Palet</div>
+              </div>
+              <div class="bg-slate-800/60 p-3.5 rounded-xl border border-slate-700/50">
+                <div class="text-gray-400 text-xs">Toplam Taş Adedi</div>
+                <div id="resAdet" class="text-2xl font-black text-amber-400 mt-1">~12.600 Adet</div>
+              </div>
+            </div>
+
+            <div class="text-xs text-gray-400 bg-slate-950/60 p-3 rounded-lg border border-slate-800 flex items-center space-x-2">
+              <i class="fa-solid fa-truck text-amber-400 text-base"></i>
+              <span id="resSevkiyat">Bozova yolu fabrikamızdan vinçli araçla doğrudan şantiyenize sevk edilir.</span>
+            </div>
+
+            <!-- WhatsApp Butonu -->
+            <a 
+              id="calcWaBtn" 
+              href="https://wa.me/905425899300?text=Merhaba%20Mahmut%20Bey,%20350%20m2%20kilit%20taşı%20için%20fiyat%20teklifi%20almak%20istiyorum." 
+              target="_blank" 
+              class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center space-x-2 transition shadow-lg text-sm"
+            >
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Mahmut Arslan'dan Teklif Al</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== NEDEN KİLTAŞ BETON? ==================== -->
+  <section id="avantajlar" class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <span class="text-amber-600 font-bold text-xs uppercase tracking-widest bg-amber-50 px-3 py-1 rounded-full border border-amber-200">Fabrika Güvencesi</span>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-3">Neden Kiltaş Beton'u Tercih Etmelisiniz?</h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:border-amber-400 transition">
+        <div class="w-12 h-12 bg-amber-500/10 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-4">
+          <i class="fa-solid fa-industry"></i>
+        </div>
+        <h4 class="font-bold text-slate-900 text-base">Doğrudan İmalatçı</h4>
+        <p class="text-gray-600 text-xs mt-2 leading-relaxed">Aracı olmadan doğrudan Bozova yolu fabrikamızdan toptan fiyatlarla maliyet avantajı.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:border-amber-400 transition">
+        <div class="w-12 h-12 bg-amber-500/10 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-4">
+          <i class="fa-solid fa-truck-moving"></i>
+        </div>
+        <h4 class="font-bold text-slate-900 text-base">Vinçli Araç Filosu</h4>
+        <p class="text-gray-600 text-xs mt-2 leading-relaxed">Paletli taşlar şantiyenize ustaların çalışma kolaylığına uygun şekilde vinçle indirilir.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:border-amber-400 transition">
+        <div class="w-12 h-12 bg-amber-500/10 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-4">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <h4 class="font-bold text-slate-900 text-base">TSE ve Mukavemet</h4>
+        <p class="text-gray-600 text-xs mt-2 leading-relaxed">Donma, tuz ve aşınmaya karşı dayanıklı, yüksek basınçlı C30 beton kalitesi.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:border-amber-400 transition">
+        <div class="w-12 h-12 bg-amber-500/10 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-4">
+          <i class="fa-solid fa-boxes-stacked"></i>
+        </div>
+        <h4 class="font-bold text-slate-900 text-base">Hazır Paletli Stok</h4>
+        <p class="text-gray-600 text-xs mt-2 leading-relaxed">Büyük metrajlı işlerde işinizin aksamaması için sahada sürekli hazır paletli üretim.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER & HARİTA ALANI ==================== -->
+  <footer id="iletisim" class="bg-slate-950 text-gray-300 pt-16 pb-8 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800">
+      
+      <!-- Firma Bilgileri -->
+      <div class="lg:col-span-4 space-y-4">
+        <div class="text-white font-black text-2xl tracking-tight">
+          KİLTAŞ <span class="text-amber-500 font-light">BETON</span>
+        </div>
+        <p class="text-gray-400 text-xs leading-relaxed max-w-sm">
+          Şanlıurfa ve bölge genelinde kilit parke taşı, prizma taş, bordür ve su tahliye elemanları imalatında güvenilir çözüm ortağınız.
+        </p>
+        <div class="pt-2 text-xs space-y-2.5 text-gray-300">
+          <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-user-tie text-amber-500"></i>
+            <span>Satış Müdürü: <strong class="text-white">Mahmut Arslan</strong></span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-phone text-amber-500"></i>
+            <a href="tel:+905425899300" class="hover:text-amber-400 transition font-bold text-white">+90 542 589 93 00</a>
+          </div>
+          <div class="flex items-start space-x-2">
+            <i class="fa-solid fa-location-dot text-amber-500 mt-1"></i>
+            <span>Şanlıurfa - Bozova Yolu Üzeri Tesisleri, Şanlıurfa</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hızlı Linkler -->
+      <div class="lg:col-span-3 space-y-3">
+        <h4 class="text-white font-bold text-sm">Ürün Çeşitleri</h4>
+        <ul class="text-xs space-y-2.5 text-gray-400">
+          <li><a href="#urunler" class="hover:text-amber-400 transition">• Aşık Kilit Taşı (6 cm / 8 cm)</a></li>
+          <li><a href="#urunler" class="hover:text-amber-400 transition">• Prizma Dikdörtgen Parke Taşı</a></li>
+          <li><a href="#urunler" class="hover:text-amber-400 transition">• Karayolu ve Bahçe Bordürleri</a></li>
+          <li><a href="#urunler" class="hover:text-amber-400 transition">• Beton Yağmur Oluğu Taşları</a></li>
+        </ul>
+      </div>
+
+      <!-- Google Harita ve Yol Tarifi -->
+      <div class="lg:col-span-5 space-y-3">
+        <div class="flex justify-between items-center">
+          <h4 class="text-white font-bold text-sm">Fabrika Konumu (Google Haritalar)</h4>
+          <a href="https://maps.google.com/?q=Şanlıurfa+Bozova+Yolu" target="_blank" class="text-amber-400 hover:text-amber-300 text-xs font-semibold">
+            Yol Tarifi Al <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+          </a>
+        </div>
+        <div class="w-full h-48 rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 shadow-inner">
+          <iframe 
+            title="Kiltaş Beton Fabrika Konumu"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102000!2d38.75!3d37.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDE1JzAwLjAiTiAzOMKwNDUnMDAuMCJF!5e0!3m2!1str!2str!4v1600000000000!5m2!1str!2str" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Telif Bilgisi -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500">
+      <div>© 2026 Kiltaş Beton. Tüm Hakları Saklıdır.</div>
+      <div class="mt-2 sm:mt-0">Şanlıurfa Kilit Parke Taşı ve Bordür Fabrikası</div>
+    </div>
+  </footer>
+
+  <!-- ==================== MOBİL SABİT AKSİYON BARI ==================== -->
+  <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-2.5 flex items-center justify-around z-50 md:hidden shadow-lg">
+    <a href="tel:+905425899300" class="flex-1 bg-slate-900 text-white text-center py-2.5 rounded-lg text-xs font-bold mr-2 flex items-center justify-center space-x-1.5">
+      <i class="fa-solid fa-phone text-amber-400"></i>
+      <span>Mahmut Arslan'ı Ara</span>
+    </a>
+    <a href="https://wa.me/905425899300?text=Merhaba%20Mahmut%20Bey,%20kilit%20taşı%20fiyat%20teklifi%20almak%20istiyorum." target="_blank" class="flex-1 bg-emerald-600 text-white text-center py-2.5 rounded-lg text-xs font-bold flex items-center justify-center space-x-1.5">
+      <i class="fa-brands fa-whatsapp text-sm"></i>
+      <span>WhatsApp Teklif</span>
+    </a>
+  </div>
+
+  <!-- Masaüstü Sabit WhatsApp Butonu -->
+  <a href="https://wa.me/905425899300?text=Merhaba%20Mahmut%20Bey,%20kilit%20taşı%20fiyat%20teklifi%20almak%20istiyorum." target="_blank" class="hidden md:flex fixed bottom-6 right-6 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full shadow-2xl items-center justify-center text-2xl z-50 transition transform hover:scale-110">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- ==================== JAVASCRIPT ==================== -->
+  <script>
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    const calcInput = document.getElementById('calcInput');
+    const calcUsage = document.getElementById('calcUsage');
+    const resPalet = document.getElementById('resPalet');
+    const resAdet = document.getElementById('resAdet');
+    const resSevkiyat = document.getElementById('resSevkiyat');
+    const calcWaBtn = document.getElementById('calcWaBtn');
+
+    function calculate() {
+      let m2 = parseFloat(calcInput.value) || 0;
+      if (m2 < 0) m2 = 0;
+
+      const paletSayisi = Math.ceil(m2 / 11.5);
+      const adetSayisi = Math.round(m2 * 36);
+      const kalinlik = calcUsage.value;
+
+      resPalet.textContent = paletSayisi + " Palet";
+      resAdet.textContent = "~" + adetSayisi.toLocaleString('tr-TR') + " Adet";
+
+      if (m2 > 300) {
+        resSevkiyat.textContent = "Bozova yolu fabrikamızdan vinçli araçla doğrudan şantiyenize sevk edilir.";
+      } else {
+        resSevkiyat.textContent = "Günlük hazır stoklarımızdan vinçli kamyonla derhal sevk edilir.";
+      }
+
+      const mesaj = `Merhaba Mahmut Bey, ${m2} m² (${paletSayisi} palet, ${kalinlik} cm) kilit taşı için güncel fabrika teslim fiyat teklifi almak istiyorum.`;
+      calcWaBtn.href = `https://wa.me/905425899300?text=${encodeURIComponent(mesaj)}`;
+    }
+
+    calcInput.addEventListener('input', calculate);
+    calcUsage.addEventListener('change', calculate);
+    calculate();
+  </script>
+
+</body>
+</html>
