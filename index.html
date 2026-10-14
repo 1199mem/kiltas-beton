@@ -1,535 +1,527 @@
 <!DOCTYPE html>
-<html lang="tr" class="scroll-smooth">
+<html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kiltaş Beton | Mahmut Arslan - Şanlıurfa Kilit Parke Taşı ve Bordür İmalatı</title>
-  <meta name="description" content="Şanlıurfa Bozova yolu fabrikamızdan kilit parke taşı, prizma taş, bordür ve yağmur oluğu satışı. Mahmut Arslan: +90 542 589 93 00.">
-  
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-  <!-- Font Awesome İkon Seti -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  
-  <!-- Google Fonts: Inter -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-          }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KILTAŞ BETON - Şanlıurfa | Parke ve Bordür Taşı</title>
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ================= GENEL AYARLAR ================= */
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
         }
-      }
-    }
-  </script>
-</head>
-<body class="bg-gray-50 text-slate-800 font-sans antialiased pb-16 md:pb-0">
-
-  <!-- ==================== ÜST BİLGİ BARI (TOPBAR) ==================== -->
-  <div class="bg-slate-950 text-gray-300 text-xs py-2 px-4 border-b border-slate-800 hidden md:block">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <div class="flex items-center space-x-6">
-        <span><i class="fa-solid fa-location-dot text-amber-500 mr-1.5"></i> Şanlıurfa - Bozova Yolu Üzeri Tesisleri</span>
-        <span><i class="fa-solid fa-user-tie text-amber-500 mr-1.5"></i> Satış & Sevkiyat: <strong class="text-white">Mahmut Arslan</strong></span>
-      </div>
-      <div class="flex items-center space-x-4">
-        <span><i class="fa-solid fa-truck-ramp-box text-amber-500 mr-1.5"></i> Vinçli Şantiye Teslimatı</span>
-        <span class="text-amber-400 font-semibold bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">TSE Standartlarında İmalat</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ==================== HEADER / NAVİGASYON ==================== -->
-  <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-40 border-b border-gray-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
-      
-      <!-- Logo -->
-      <a href="#" class="flex items-center space-x-2">
-        <div class="bg-slate-900 text-white font-black text-xl sm:text-2xl px-3 py-1.5 rounded-lg tracking-tight border-l-4 border-amber-500 shadow-sm">
-          KİLTAŞ <span class="text-amber-500 font-light">BETON</span>
-        </div>
-      </a>
-
-      <!-- Menü Linkleri -->
-      <nav class="hidden lg:flex items-center space-x-8 font-semibold text-slate-700 text-sm">
-        <a href="#hero" class="text-amber-600 hover:text-amber-700 transition">Ana Sayfa</a>
-        <a href="#urunler" class="hover:text-amber-600 transition">Kilit Taşı Modelleri</a>
-        <a href="#hesaplayici" class="hover:text-amber-600 transition">m² Hesapla</a>
-        <a href="#avantajlar" class="hover:text-amber-600 transition">Neden Kiltaş?</a>
-        <a href="#iletisim" class="hover:text-amber-600 transition">Fabrika & Konum</a>
-      </nav>
-
-      <!-- Aksiyon Butonları -->
-      <div class="flex items-center space-x-3">
-        <a href="tel:+905425899300" class="hidden sm:flex items-center space-x-2 text-slate-900 bg-gray-100 hover:bg-gray-200 px-4 py-2.5 rounded-lg text-sm font-bold transition">
-          <i class="fa-solid fa-phone text-amber-600"></i>
-          <span>0542 589 93 00</span>
-        </a>
-        <a href="https://wa.me/905425899300?text=Merhaba%20Mahmut%20Bey,%20Kiltaş%20Beton%20kilit%20taşı%20fiyat%20teklifi%20almak%20istiyorum." target="_blank" class="flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-lg text-sm font-bold shadow-sm transition">
-          <i class="fa-brands fa-whatsapp text-lg"></i>
-          <span class="hidden sm:inline">WhatsApp Teklif</span>
-          <span class="sm:hidden">Teklif Al</span>
-        </a>
+        body { 
+            font-family: 'Inter', Arial, sans-serif; 
+            background: #0F1214; 
+            color: #FFFFFF; 
+            line-height: 1.6; 
+            overflow-x: hidden;
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 0 20px; 
+        }
+        a { 
+            text-decoration: none; 
+            color: inherit; 
+        }
         
-        <!-- Mobil Menü Butonu -->
-        <button id="mobileMenuBtn" class="lg:hidden text-slate-800 p-2 focus:outline-none text-xl" aria-label="Menüyü Aç">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </div>
-    </div>
+        /* ================= BUTONLAR ================= */
+        .btn { 
+            background: #f97316; 
+            color: #000000; 
+            padding: 10px 22px; 
+            border-radius: 999px; 
+            font-weight: 700; 
+            display: inline-block; 
+            transition: transform 0.2s, background 0.2s;
+        }
+        .btn:hover {
+            background: #ea580c;
+            transform: translateY(-2px);
+        }
+        .btn-big { 
+            padding: 14px 28px; 
+            font-size: 16px; 
+        }
+        .btn-outline { 
+            background: transparent; 
+            border: 1px solid rgba(255, 255, 255, 0.25); 
+            color: #FFFFFF; 
+        }
+        .btn-outline:hover {
+            border-color: #f97316;
+            color: #f97316;
+        }
 
-    <!-- Mobil Menü Çekmecesi -->
-    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-3 font-semibold text-slate-800">
-      <a href="#hero" class="block py-2 text-amber-600 border-b border-gray-50 mobile-link">Ana Sayfa</a>
-      <a href="#urunler" class="block py-2 border-b border-gray-50 mobile-link">Kilit Taşı Modelleri</a>
-      <a href="#hesaplayici" class="block py-2 border-b border-gray-50 mobile-link">Metrekare / Palet Hesaplama</a>
-      <a href="#avantajlar" class="block py-2 border-b border-gray-50 mobile-link">Fabrika Avantajlarımız</a>
-      <a href="#iletisim" class="block py-2 mobile-link">Fabrika Konumu & İletişim</a>
-      <div class="pt-2 text-xs text-gray-500">
-        <div>Yetkili: <strong>Mahmut Arslan</strong></div>
-        <div>Tel: <a href="tel:+905425899300" class="text-amber-600 font-bold">+90 542 589 93 00</a></div>
-      </div>
-    </div>
-  </header>
+        /* ================= HEADER ================= */
+        header { 
+            background: rgba(15, 18, 20, 0.95); 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08); 
+            position: sticky; 
+            top: 0; 
+            backdrop-filter: blur(10px); 
+            z-index: 50;
+        }
+        header .container { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            height: 72px; 
+        }
+        .logo { 
+            display: flex; 
+            gap: 12px; 
+            align-items: center; 
+        }
+        .logo-icon { 
+            width: 44px; 
+            height: 44px; 
+            background: #f97316; 
+            color: #000000; 
+            font-weight: 900; 
+            font-size: 22px; 
+            display: grid; 
+            place-items: center; 
+            border-radius: 12px; 
+        }
+        .logo h1 { 
+            font-size: 18px; 
+            line-height: 1.1; 
+            font-weight: 900;
+        }
+        .logo span { 
+            font-size: 10px; 
+            color: #f97316; 
+            letter-spacing: 2px; 
+            font-weight: 700;
+        }
+        nav { 
+            display: flex; 
+            gap: 24px; 
+            font-size: 14px; 
+            color: rgba(255, 255, 255, 0.7); 
+        }
+        nav a:hover { 
+            color: #f97316; 
+        }
 
-  <!-- ==================== HERO BÖLÜMÜ ==================== -->
-  <section id="hero" class="relative bg-slate-950 text-white py-16 lg:py-24 overflow-hidden">
-    <div class="absolute top-0 right-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        /* ================= HERO ================= */
+        .hero { 
+            padding: 80px 0; 
+            background: radial-gradient(circle at 20% 50%, rgba(249, 115, 22, 0.12), transparent 50%), #0F1214; 
+        }
+        .hero .container { 
+            display: grid; 
+            grid-template-columns: 1.1fr 0.9fr; 
+            gap: 40px; 
+            align-items: center; 
+        }
+        .badge { 
+            background: rgba(249, 115, 22, 0.12); 
+            border: 1px solid rgba(249, 115, 22, 0.3); 
+            color: #fdba74; 
+            font-size: 12px; 
+            font-weight: 600;
+            padding: 6px 14px; 
+            border-radius: 999px; 
+            display: inline-block;
+        }
+        .hero h2 { 
+            font-size: 52px; 
+            font-weight: 900; 
+            line-height: 1.05; 
+            margin-top: 20px; 
+            letter-spacing: -1px;
+        }
+        .hero h2 span { 
+            color: #f97316; 
+        }
+        .hero p { 
+            margin-top: 16px; 
+            color: rgba(255, 255, 255, 0.75); 
+            max-width: 520px; 
+            font-size: 16px;
+        }
+        .hero-buttons { 
+            margin-top: 28px; 
+            display: flex; 
+            gap: 14px; 
+        }
+        .stats { 
+            margin-top: 40px; 
+            display: flex; 
+            gap: 20px; 
+        }
+        .stats div { 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            padding: 16px 22px; 
+            border-radius: 16px; 
+            background: rgba(255, 255, 255, 0.03); 
+        }
+        .stats strong {
+            font-size: 22px;
+            color: #f97316;
+        }
+        .hero-right img { 
+            width: 100%; 
+            height: 420px; 
+            object-fit: cover; 
+            border-radius: 24px; 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+        }
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
-      
-      <!-- Sol Yazı Alanı -->
-      <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-        <div class="inline-flex items-center space-x-2 bg-amber-500/20 text-amber-400 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border border-amber-500/30">
-          <i class="fa-solid fa-industry"></i>
-          <span>Şanlıurfa - Bozova Yolu Fabrika Satış</span>
-        </div>
+        /* ================= ÜRÜNLER ================= */
+        .products { 
+            padding: 90px 0; 
+        }
+        .products h3 { 
+            font-size: 38px; 
+            font-weight: 900; 
+            letter-spacing: -0.5px;
+        }
+        .subtitle { 
+            color: rgba(255, 255, 255, 0.6); 
+            font-size: 15px; 
+            margin-top: 8px; 
+        }
+        .product-grid { 
+            margin-top: 40px; 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 24px; 
+        }
+        .product-card { 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            border-radius: 20px; 
+            overflow: hidden; 
+            background: rgba(255, 255, 255, 0.03); 
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(249, 115, 22, 0.5);
+        }
+        .product-card img { 
+            width: 100%; 
+            height: 220px; 
+            object-fit: cover; 
+        }
+        .card-body { 
+            padding: 24px; 
+        }
+        .tag { 
+            font-size: 11px; 
+            color: #f97316; 
+            font-weight: 800; 
+            letter-spacing: 1px;
+        }
+        .card-body h4 { 
+            margin-top: 6px; 
+            font-size: 20px; 
+            font-weight: 700;
+        }
+        .card-body p { 
+            margin-top: 8px; 
+            font-size: 14px; 
+            color: rgba(255, 255, 255, 0.65); 
+        }
 
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight tracking-tight">
-          Yüksek Mukavemetli <br class="hidden sm:inline">
-          <span class="text-amber-400">Kilit Parke Taşı</span> ve Çevre Elemanları
-        </h1>
+        /* ================= REFERANS ================= */
+        .references { 
+            background: #14181C; 
+            border-top: 1px solid rgba(255, 255, 255, 0.05); 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+            padding: 60px 0; 
+        }
+        .references h4 { 
+            font-size: 13px; 
+            letter-spacing: 2px; 
+            color: rgba(255, 255, 255, 0.5); 
+            text-align: center;
+        }
+        .ref-list { 
+            margin-top: 28px; 
+            display: grid; 
+            grid-template-columns: repeat(5, 1fr); 
+            gap: 16px; 
+        }
+        .ref-list div { 
+            border: 1px solid rgba(255, 255, 255, 0.08); 
+            padding: 16px 12px; 
+            border-radius: 12px; 
+            text-align: center; 
+            background: #0F1214; 
+            font-weight: 600; 
+            font-size: 14px; 
+        }
 
-        <p class="text-gray-300 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-          Bozova yolu tesisimizde pres baskı makineleriyle üretilen kilit taşları, bordür ve yağmur olukları; kendi vinçli araç filomuzla doğrudan şantiyenize sevk edilir.
-        </p>
+        /* ================= HAKKIMIZDA ================= */
+        .about { 
+            padding: 90px 0; 
+        }
+        .about .container { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 50px; 
+            align-items: center; 
+        }
+        .about-text h3 { 
+            font-size: 34px; 
+            font-weight: 900; 
+            line-height: 1.15; 
+        }
+        .about-text p { 
+            margin-top: 18px; 
+            color: rgba(255, 255, 255, 0.75); 
+            font-size: 15px; 
+        }
+        .about-text ul { 
+            margin-top: 24px; 
+            list-style: none; 
+        }
+        .about-text li { 
+            margin-top: 10px; 
+            font-size: 14px; 
+            color: rgba(255, 255, 255, 0.85);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .about-text li span {
+            color: #f97316;
+            font-weight: bold;
+        }
+        .about img { 
+            width: 100%; 
+            height: 380px; 
+            object-fit: cover; 
+            border-radius: 24px; 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+        }
 
-        <!-- CTA Butonları -->
-        <div class="pt-2 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-          <a href="https://wa.me/905425899300?text=Merhaba%20Mahmut%20Bey,%20kilit%20taşı%20güncel%20m2%20fiyatını%20öğrenmek%20istiyorum." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-emerald-900/30 flex items-center justify-center space-x-3 transition transform hover:-translate-y-0.5">
-            <i class="fa-brands fa-whatsapp text-xl"></i>
-            <span>WhatsApp m² Fiyatı Al</span>
-          </a>
-          <a href="tel:+905425899300" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-amber-900/20 flex items-center justify-center space-x-3 transition transform hover:-translate-y-0.5">
-            <i class="fa-solid fa-phone"></i>
-            <span>Mahmut Arslan: 0542 589 93 00</span>
-          </a>
-        </div>
+        /* ================= FOOTER ================= */
+        footer { 
+            background: #080A0C; 
+            border-top: 1px solid rgba(255, 255, 255, 0.08); 
+            padding: 60px 0 30px; 
+        }
+        footer .container { 
+            display: grid; 
+            grid-template-columns: 1.2fr 0.8fr; 
+            gap: 40px; 
+        }
+        footer h4 { 
+            font-weight: 900; 
+            font-size: 18px;
+        }
+        footer p { 
+            margin-top: 14px; 
+            color: rgba(255, 255, 255, 0.7); 
+            font-size: 14px; 
+            line-height: 1.8; 
+        }
+        .footer-box { 
+            background: rgba(255, 255, 255, 0.04); 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            border-radius: 16px; 
+            padding: 28px; 
+        }
+        .footer-box strong {
+            font-size: 18px;
+        }
+        .footer-box p {
+            margin-top: 6px;
+            font-size: 14px;
+        }
+        .footer-box .btn { 
+            margin-top: 18px; 
+            width: 100%; 
+            text-align: center; 
+        }
+        .copyright { 
+            text-align: center; 
+            margin-top: 50px; 
+            font-size: 12px; 
+            color: rgba(255, 255, 255, 0.35); 
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 20px;
+        }
 
-        <!-- Rozetler -->
-        <div class="pt-6 grid grid-cols-3 gap-4 border-t border-slate-800 text-gray-300">
-          <div class="p-2">
-            <div class="font-extrabold text-amber-400 text-lg sm:text-2xl">3.000 m²</div>
-            <div class="text-[11px] sm:text-xs text-gray-400 mt-0.5">Günlük Üretim</div>
-          </div>
-          <div class="p-2 border-x border-slate-800">
-            <div class="font-extrabold text-amber-400 text-lg sm:text-2xl">6cm / 8cm</div>
-            <div class="text-[11px] sm:text-xs text-gray-400 mt-0.5">Taş Kalınlıkları</div>
-          </div>
-          <div class="p-2">
-            <div class="font-extrabold text-amber-400 text-lg sm:text-2xl">Vinçli</div>
-            <div class="text-[11px] sm:text-xs text-gray-400 mt-0.5">Şantiyeye Teslimat</div>
-          </div>
-        </div>
-      </div>
+        /* ================= WHATSAPP SABİT ================= */
+        .whatsapp-fixed { 
+            position: fixed; 
+            bottom: 24px; 
+            right: 24px; 
+            width: 58px; 
+            height: 58px; 
+            background: #25D366; 
+            color: #FFFFFF;
+            border-radius: 50%; 
+            display: grid; 
+            place-items: center; 
+            font-size: 30px; 
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+            z-index: 99; 
+            transition: transform 0.2s;
+        }
+        .whatsapp-fixed:hover {
+            transform: scale(1.1);
+        }
 
-      <!-- Sağ Kart (Stok Sahası Görseli) -->
-      <div class="lg:col-span-5">
-        <div class="bg-slate-900 p-3 sm:p-4 rounded-3xl shadow-2xl border border-slate-800 relative">
-          <div class="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden bg-slate-800 group">
-            <img 
-              src="https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=900&q=80" 
-              alt="Kiltaş Beton Kilit Parke Taşı Stok Sahası" 
-              class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90"
-            >
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
-            
-            <div class="absolute bottom-4 left-4 right-4 bg-slate-950/90 backdrop-blur-md p-4 rounded-xl border border-slate-700/80">
-              <div class="flex items-center space-x-2 text-xs font-bold text-amber-400 uppercase">
-                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                <span>Sevkiyata Hazır Paletli Stoklar</span>
-              </div>
-              <p class="text-sm font-semibold text-white mt-1">Aşık Taşları, Bordürler ve Su Olukları</p>
-              <p class="text-xs text-gray-400 mt-0.5">Şanlıurfa ve çevre ilçelere derhal araç sevkiyatı</p>
+        /* ================= MOBİL UYUM ================= */
+        @media (max-width: 768px) {    
+            nav { display: none; }    
+            .hero .container { grid-template-columns: 1fr; }    
+            .hero h2 { font-size: 34px; }    
+            .product-grid { grid-template-columns: 1fr; }    
+            .ref-list { grid-template-columns: 1fr 1fr; }    
+            .about .container { grid-template-columns: 1fr; }    
+            footer .container { grid-template-columns: 1fr; }
+            .stats { flex-wrap: wrap; gap: 10px; }
+            .stats div { flex: 1 1 40%; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <!-- ================= HEADER ================= -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">K</div>
+                <div>
+                    <h1>KILTAŞ BETON</h1>
+                    <span>ŞANLIURFA • 2012</span>
+                </div>
             </div>
-          </div>
+            <nav>
+                <a href="#urunler">Ürünler</a>
+                <a href="#hakkimizda">Hakkımızda</a>
+                <a href="#referans">Referanslar</a>
+                <a href="#iletisim">İletişim</a>
+            </nav>
+            <a href="https://wa.me/905531662731" class="btn">Hemen Ara</a>
         </div>
-      </div>
+    </header>
 
-    </div>
-  </section>
-
-  <!-- ==================== ÜRÜN ÇEŞİTLERİ (KATALOG) ==================== -->
-  <section id="urunler" class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center max-w-3xl mx-auto mb-14">
-      <span class="text-amber-600 font-bold text-xs uppercase tracking-widest bg-amber-50 px-3 py-1 rounded-full border border-amber-200">İmalat Kataloğumuz</span>
-      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mt-3">Kilit Parke Taşı ve Beton Çözümleri</h2>
-      <p class="text-gray-600 text-sm sm:text-base mt-3">Belediye projeleri, fabrika sahaları, site içi yollar ve otoparklar için yüksek mukavemetli pres taşlar.</p>
-    </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      
-      <!-- Kart 1: Aşık Kilit Parke Taşı -->
-      <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden transition flex flex-col group">
-        <div class="h-48 bg-slate-100 overflow-hidden relative">
-          <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?auto=format&fit=crop&w=600&q=80" alt="Aşık Kilit Parke Taşı" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-          <span class="absolute top-3 left-3 bg-slate-900 text-white text-[11px] font-bold px-2.5 py-1 rounded-md">En Çok Tercih Edilen</span>
-        </div>
-        <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
-          <div>
-            <h3 class="font-bold text-lg text-slate-900">Aşık Kilit Taşı</h3>
-            <p class="text-xs text-gray-500 mt-1 leading-relaxed">Geometrik kenetlenme yapısıyla araç geçişlerinde kayma ve açılma yapmaz.</p>
-            <div class="mt-3 bg-gray-50 p-3 rounded-lg text-xs space-y-1.5 text-gray-700 font-medium border border-gray-100">
-              <div><strong class="text-slate-900">• 6 cm:</strong> Otopark & Yürüyüş Yolu</div>
-              <div><strong class="text-slate-900">• 8 cm:</strong> Ağır Tır & Sanayi Sahası</div>
-              <div><strong class="text-slate-900">• Renk:</strong> Gri, Kırmızı, Siyah</div>
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-left">
+                <span class="badge">🏗️ ORGANİZE SANAYİ - GÜNLÜK 2500 M² ÜRETİM</span>
+                <h2>ŞANLIURFA'NIN<br>ZEMİNİ<br><span>BİZE EMANET.</span></h2>
+                <p>12 yıldır Şanlıurfa'da kilitli parke taşı, bordür ve yağmur oluğu üretiyoruz. TSE belgeli, belediye şartnamelerine uygun.</p>
+                
+                <div class="hero-buttons">
+                    <a href="https://wa.me/905531662731" class="btn btn-big">📦 Fiyat Listesi İste</a>
+                    <a href="#urunler" class="btn btn-outline btn-big">Ürünleri Gör</a>
+                </div>
+                <div class="stats">
+                    <div><strong>12+</strong><br>Yıl Tecrübe</div>
+                    <div><strong>85+</strong><br>Proje</div>
+                    <div><strong>TSE</strong><br>Belgeli</div>
+                </div>
             </div>
-          </div>
-          <a href="https://wa.me/905425899300?text=Merhaba%20Mahmut%20Bey,%20Aşık%20Kilit%20Taşı%20fiyatı%20öğrenmek%20istiyorum." target="_blank" class="block w-full text-center bg-slate-900 hover:bg-amber-500 hover:text-slate-950 text-white font-bold text-xs py-3 rounded-lg transition">
-            Mahmut Bey'den Fiyat Al <i class="fa-solid fa-arrow-right ml-1"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Kart 2: Prizma Parke Taşı -->
-      <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden transition flex flex-col group">
-        <div class="h-48 bg-slate-100 overflow-hidden relative">
-          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80" alt="Prizma Parke Taşı" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-          <span class="absolute top-3 left-3 bg-amber-500 text-slate-950 text-[11px] font-bold px-2.5 py-1 rounded-md">Modern Peyzaj</span>
-        </div>
-        <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
-          <div>
-            <h3 class="font-bold text-lg text-slate-900">Prizma Parke Taşı</h3>
-            <p class="text-xs text-gray-500 mt-1 leading-relaxed">Düz hatlı modern mimari projeler, meydanlar ve villa bahçe çevre düzenlemeleri için estetik seçim.</p>
-            <div class="mt-3 bg-gray-50 p-3 rounded-lg text-xs space-y-1.5 text-gray-700 font-medium border border-gray-100">
-              <div><strong class="text-slate-900">• Ebat:</strong> 10 x 20 cm</div>
-              <div><strong class="text-slate-900">• Kalınlık:</strong> 6 cm ve 8 cm</div>
-              <div><strong class="text-slate-900">• Desen:</strong> Balıksırtı & Düz Örgü</div>
+            <div class="hero-right">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="parke taşı">
             </div>
-          </div>
-          <a href="https://wa.me/905425899300?text=Merhaba%20Mahmut%20Bey,%20Prizma%20Parke%20Taşı%20fiyatı%20öğrenmek%20istiyorum." target="_blank" class="block w-full text-center bg-slate-900 hover:bg-amber-500 hover:text-slate-950 text-white font-bold text-xs py-3 rounded-lg transition">
-            Mahmut Bey'den Fiyat Al <i class="fa-solid fa-arrow-right ml-1"></i>
-          </a>
         </div>
-      </div>
+    </section>
 
-      <!-- Kart 3: Beton Bordür Taşları -->
-      <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden transition flex flex-col group">
-        <div class="h-48 bg-slate-100 overflow-hidden relative">
-          <img src="https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?auto=format&fit=crop&w=600&q=80" alt="Beton Bordür Taşı" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-          <span class="absolute top-3 left-3 bg-slate-900 text-white text-[11px] font-bold px-2.5 py-1 rounded-md">Yol & Sınır</span>
-        </div>
-        <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
-          <div>
-            <h3 class="font-bold text-lg text-slate-900">Yol & Bahçe Bordürü</h3>
-            <p class="text-xs text-gray-500 mt-1 leading-relaxed">Kilit taşlarının yanlara açılmasını engelleyen, kaldırımları ve yeşil alanları sınırlayan elemanlar.</p>
-            <div class="mt-3 bg-gray-50 p-3 rounded-lg text-xs space-y-1.5 text-gray-700 font-medium border border-gray-100">
-              <div><strong class="text-slate-900">• Bahçe Bordürü:</strong> 10x20x50 cm</div>
-              <div><strong class="text-slate-900">• Karayolu Bordürü:</strong> 15x30x75 cm</div>
-              <div><strong class="text-slate-900">• Refüj Bordürü:</strong> Yüksek mukavemet</div>
+    <!-- ================= ÜRÜNLER ================= -->
+    <section id="urunler" class="products">
+        <div class="container">
+            <h3>ÜRETİM YELPAZEMİZ</h3>
+            <p class="subtitle">Belediye ve müteahhit şartnamelerine uygun ürünler</p>
+            <div class="product-grid">
+                <!-- Ürün 1 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80" alt="parke">
+                    <div class="card-body">
+                        <span class="tag">EN ÇOK SATAN</span>
+                        <h4>Kilitli Parke Taşı 8'lik</h4>
+                        <p>Belediye ihalelerinde en çok istenen model. 8cm kalınlık, kaymaz yüzey.</p>
+                    </div>
+                </div>
+                <!-- Ürün 2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f6?w=600&q=80" alt="bordur">
+                    <div class="card-body">
+                        <span class="tag">BORDÜR</span>
+                        <h4>Bordür Taşı 50x20</h4>
+                        <p>Yol kenarı, kaldırım ayrımı için standart belediye ölçüsü.</p>
+                    </div>
+                </div>
+                <!-- Ürün 3 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?w=600&q=80" alt="yagmur olugu">
+                    <div class="card-body">
+                        <span class="tag">ALTYAPI</span>
+                        <h4>Yağmur Oluğu Taşı</h4>
+                        <p>Su tahliyesi için yüksek eğimli, dayanıklı tasarım.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <a href="https://wa.me/905425899300?text=Merhaba%20Mahmut%20Bey,%20Beton%20Bordür%20fiyatı%20öğrenmek%20istiyorum." target="_blank" class="block w-full text-center bg-slate-900 hover:bg-amber-500 hover:text-slate-950 text-white font-bold text-xs py-3 rounded-lg transition">
-            Mahmut Bey'den Fiyat Al <i class="fa-solid fa-arrow-right ml-1"></i>
-          </a>
         </div>
-      </div>
+    </section>
 
-      <!-- Kart 4: Beton Yağmur Oluğu -->
-      <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 overflow-hidden transition flex flex-col group">
-        <div class="h-48 bg-slate-100 overflow-hidden relative">
-          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="Beton Yağmur Oluğu" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-          <span class="absolute top-3 left-3 bg-slate-900 text-white text-[11px] font-bold px-2.5 py-1 rounded-md">Su Tahliyesi</span>
-        </div>
-        <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
-          <div>
-            <h3 class="font-bold text-lg text-slate-900">Beton Yağmur Oluğu</h3>
-            <p class="text-xs text-gray-500 mt-1 leading-relaxed">Yol gövdesindeki yağmur suyunu tahliye ederek taşların alt kumunun oyulmasını önler.</p>
-            <div class="mt-3 bg-gray-50 p-3 rounded-lg text-xs space-y-1.5 text-gray-700 font-medium border border-gray-100">
-              <div><strong class="text-slate-900">• Tip:</strong> Standart Kanal Tipi Oluk</div>
-              <div><strong class="text-slate-900">• Yüzey:</strong> Pürüzsüz akıntı yüzeyi</div>
-              <div><strong class="text-slate-900">• Dayanım:</strong> Kış donlarına karşı tam direnç</div>
+    <!-- ================= REFERANS ================= -->
+    <section id="referans" class="references">
+        <div class="container">
+            <h4>REFERANSLARIMIZ</h4>
+            <div class="ref-list">
+                <div>Şanlıurfa Büyükşehir</div>
+                <div>Eyyübiye Belediyesi</div>
+                <div>Haliliye Belediyesi</div>
+                <div>Karaköprü Belediyesi</div>
+                <div>120+ Müteahhit</div>
             </div>
-          </div>
-          <a href="https://wa.me/905425899300?text=Merhaba%20Mahmut%20Bey,%20Beton%20Yağmur%20Oluğu%20fiyatı%20öğrenmek%20istiyorum." target="_blank" class="block w-full text-center bg-slate-900 hover:bg-amber-500 hover:text-slate-950 text-white font-bold text-xs py-3 rounded-lg transition">
-            Mahmut Bey'den Fiyat Al <i class="fa-solid fa-arrow-right ml-1"></i>
-          </a>
         </div>
-      </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- ================= HAKKIMIZDA ================= -->
+    <section id="hakkimizda" class="about">
+        <div class="container">
+            <div class="about-text">
+                <h3>FABRİKA DEĞİL,<br>ŞANTİYENİN YANINDAYIZ.</h3>
+                <p>Organize Sanayi'de 4.500 m² alanda üretim yapıyoruz. Müşterilerimizin %70'i müteahhit olduğu için şantiye diliyle konuşuyoruz.</p>
+                <ul>
+                    <li><span>✔</span> TSE, CE ve ISO 9001 Belgeli</li>
+                    <li><span>✔</span> Aynı gün araç yükleme ve sevk</li>
+                    <li><span>✔</span> Şanlıurfa içi nakliye desteği</li>
+                    <li><span>✔</span> Ücretsiz keşif ve metraj</li>
+                </ul>
+            </div>
+            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80" alt="fabrika">
+        </div>
+    </section>
 
-  <!-- ==================== METREKARE & PALET HESAPLAYICI ==================== -->
-  <section id="hesaplayici" class="bg-gradient-to-br from-slate-900 to-slate-950 text-white py-16 sm:py-20 border-y border-slate-800">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-2xl mx-auto mb-10">
-        <span class="text-amber-400 font-bold text-xs uppercase tracking-wider">Hızlı İhtiyaç Tespiti</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold mt-2">Döşenecek Alanınız Kaç m²?</h2>
-        <p class="text-gray-400 text-sm mt-2">Şantiyenizin metrajını girin, tahmini palet sayısını ve nakliye önerisini hemen görün.</p>
-      </div>
-
-      <div class="bg-slate-800/80 backdrop-blur-md rounded-3xl p-6 sm:p-10 border border-slate-700 shadow-2xl">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-          
-          <!-- Giriş Alanı -->
-          <div class="md:col-span-6 space-y-5">
+    <!-- ================= FOOTER ================= -->
+    <footer id="iletisim">
+        <div class="container">
             <div>
-              <label class="block text-xs font-bold uppercase text-gray-300 mb-2">Toplam Alan (Metrekare - m²)</label>
-              <div class="relative">
-                <input 
-                  type="number" 
-                  id="calcInput" 
-                  value="350" 
-                  min="10" 
-                  step="10"
-                  class="w-full bg-slate-900 text-white font-bold text-2xl px-5 py-4 rounded-xl border border-slate-600 focus:border-amber-500 focus:outline-none"
-                  placeholder="Örn: 250"
-                >
-                <span class="absolute right-5 top-5 text-gray-400 font-bold">m²</span>
-              </div>
+                <h4>KILTAŞ BETON ŞANLIURFA</h4>
+                <p>📍 1. Organize Sanayi Bölgesi, Eyyübiye / Şanlıurfa<br>
+                   📞 0553 166 27 31<br>
+                   🕘 07:30 - 18:00 Hafta içi</p>
             </div>
-
-            <div>
-              <label class="block text-xs font-bold uppercase text-gray-300 mb-2">Kullanım Amacı</label>
-              <select id="calcUsage" class="w-full bg-slate-900 text-white font-medium text-sm px-4 py-3 rounded-xl border border-slate-600 focus:border-amber-500 focus:outline-none">
-                <option value="6">Otopark, Site İçi Yol, Bahçe (6 cm Önerilir)</option>
-                <option value="8">Ağır Tonaj, Kamyon Yolu, Sanayi Sahası (8 cm Zorunlu)</option>
-              </select>
+            <div class="footer-box">
+                <strong>Hemen Teklif Al</strong>
+                <p>Metrekareyi yaz, aynı gün fiyat verelim.</p>
+                <a href="https://wa.me/905531662731" class="btn">WhatsApp'tan Yaz</a>
             </div>
-          </div>
-
-          <!-- Canlı Hesap Sonuç Paneli -->
-          <div class="md:col-span-6 bg-slate-900/90 p-6 rounded-2xl border border-slate-700/80 space-y-4">
-            <div class="text-xs text-amber-400 font-bold uppercase tracking-wider">Tahmini Sipariş Dökümü</div>
-            
-            <div class="grid grid-cols-2 gap-4">
-              <div class="bg-slate-800/60 p-3.5 rounded-xl border border-slate-700/50">
-                <div class="text-gray-400 text-xs">Yaklaşık Palet</div>
-                <div id="resPalet" class="text-2xl font-black text-white mt-1">31 Palet</div>
-              </div>
-              <div class="bg-slate-800/60 p-3.5 rounded-xl border border-slate-700/50">
-                <div class="text-gray-400 text-xs">Toplam Taş Adedi</div>
-                <div id="resAdet" class="text-2xl font-black text-amber-400 mt-1">~12.600 Adet</div>
-              </div>
-            </div>
-
-            <div class="text-xs text-gray-400 bg-slate-950/60 p-3 rounded-lg border border-slate-800 flex items-center space-x-2">
-              <i class="fa-solid fa-truck text-amber-400 text-base"></i>
-              <span id="resSevkiyat">Bozova yolu fabrikamızdan vinçli araçla doğrudan şantiyenize sevk edilir.</span>
-            </div>
-
-            <!-- WhatsApp Butonu -->
-            <a 
-              id="calcWaBtn" 
-              href="https://wa.me/905425899300?text=Merhaba%20Mahmut%20Bey,%20350%20m2%20kilit%20taşı%20için%20fiyat%20teklifi%20almak%20istiyorum." 
-              target="_blank" 
-              class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center space-x-2 transition shadow-lg text-sm"
-            >
-              <i class="fa-brands fa-whatsapp text-lg"></i>
-              <span>Mahmut Arslan'dan Teklif Al</span>
-            </a>
-          </div>
-
         </div>
-      </div>
+        <div class="copyright">© 2026 KILTAŞ BETON - Demo tasarım: vitrinkodu.com.tr</div>
+    </footer>
 
-    </div>
-  </section>
-
-  <!-- ==================== NEDEN KİLTAŞ BETON? ==================== -->
-  <section id="avantajlar" class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center max-w-2xl mx-auto mb-14">
-      <span class="text-amber-600 font-bold text-xs uppercase tracking-widest bg-amber-50 px-3 py-1 rounded-full border border-amber-200">Fabrika Güvencesi</span>
-      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-3">Neden Kiltaş Beton'u Tercih Etmelisiniz?</h2>
-    </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      
-      <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:border-amber-400 transition">
-        <div class="w-12 h-12 bg-amber-500/10 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-4">
-          <i class="fa-solid fa-industry"></i>
-        </div>
-        <h4 class="font-bold text-slate-900 text-base">Doğrudan İmalatçı</h4>
-        <p class="text-gray-600 text-xs mt-2 leading-relaxed">Aracı olmadan doğrudan Bozova yolu fabrikamızdan toptan fiyatlarla maliyet avantajı.</p>
-      </div>
-
-      <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:border-amber-400 transition">
-        <div class="w-12 h-12 bg-amber-500/10 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-4">
-          <i class="fa-solid fa-truck-moving"></i>
-        </div>
-        <h4 class="font-bold text-slate-900 text-base">Vinçli Araç Filosu</h4>
-        <p class="text-gray-600 text-xs mt-2 leading-relaxed">Paletli taşlar şantiyenize ustaların çalışma kolaylığına uygun şekilde vinçle indirilir.</p>
-      </div>
-
-      <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:border-amber-400 transition">
-        <div class="w-12 h-12 bg-amber-500/10 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-4">
-          <i class="fa-solid fa-shield-halved"></i>
-        </div>
-        <h4 class="font-bold text-slate-900 text-base">TSE ve Mukavemet</h4>
-        <p class="text-gray-600 text-xs mt-2 leading-relaxed">Donma, tuz ve aşınmaya karşı dayanıklı, yüksek basınçlı C30 beton kalitesi.</p>
-      </div>
-
-      <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:border-amber-400 transition">
-        <div class="w-12 h-12 bg-amber-500/10 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-4">
-          <i class="fa-solid fa-boxes-stacked"></i>
-        </div>
-        <h4 class="font-bold text-slate-900 text-base">Hazır Paletli Stok</h4>
-        <p class="text-gray-600 text-xs mt-2 leading-relaxed">Büyük metrajlı işlerde işinizin aksamaması için sahada sürekli hazır paletli üretim.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ==================== FOOTER & HARİTA ALANI ==================== -->
-  <footer id="iletisim" class="bg-slate-950 text-gray-300 pt-16 pb-8 border-t border-slate-900">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800">
-      
-      <!-- Firma Bilgileri -->
-      <div class="lg:col-span-4 space-y-4">
-        <div class="text-white font-black text-2xl tracking-tight">
-          KİLTAŞ <span class="text-amber-500 font-light">BETON</span>
-        </div>
-        <p class="text-gray-400 text-xs leading-relaxed max-w-sm">
-          Şanlıurfa ve bölge genelinde kilit parke taşı, prizma taş, bordür ve su tahliye elemanları imalatında güvenilir çözüm ortağınız.
-        </p>
-        <div class="pt-2 text-xs space-y-2.5 text-gray-300">
-          <div class="flex items-center space-x-2">
-            <i class="fa-solid fa-user-tie text-amber-500"></i>
-            <span>Satış Müdürü: <strong class="text-white">Mahmut Arslan</strong></span>
-          </div>
-          <div class="flex items-center space-x-2">
-            <i class="fa-solid fa-phone text-amber-500"></i>
-            <a href="tel:+905425899300" class="hover:text-amber-400 transition font-bold text-white">+90 542 589 93 00</a>
-          </div>
-          <div class="flex items-start space-x-2">
-            <i class="fa-solid fa-location-dot text-amber-500 mt-1"></i>
-            <span>Şanlıurfa - Bozova Yolu Üzeri Tesisleri, Şanlıurfa</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Hızlı Linkler -->
-      <div class="lg:col-span-3 space-y-3">
-        <h4 class="text-white font-bold text-sm">Ürün Çeşitleri</h4>
-        <ul class="text-xs space-y-2.5 text-gray-400">
-          <li><a href="#urunler" class="hover:text-amber-400 transition">• Aşık Kilit Taşı (6 cm / 8 cm)</a></li>
-          <li><a href="#urunler" class="hover:text-amber-400 transition">• Prizma Dikdörtgen Parke Taşı</a></li>
-          <li><a href="#urunler" class="hover:text-amber-400 transition">• Karayolu ve Bahçe Bordürleri</a></li>
-          <li><a href="#urunler" class="hover:text-amber-400 transition">• Beton Yağmur Oluğu Taşları</a></li>
-        </ul>
-      </div>
-
-      <!-- Google Harita ve Yol Tarifi -->
-      <div class="lg:col-span-5 space-y-3">
-        <div class="flex justify-between items-center">
-          <h4 class="text-white font-bold text-sm">Fabrika Konumu (Google Haritalar)</h4>
-          <a href="https://maps.google.com/?q=Şanlıurfa+Bozova+Yolu" target="_blank" class="text-amber-400 hover:text-amber-300 text-xs font-semibold">
-            Yol Tarifi Al <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
-          </a>
-        </div>
-        <div class="w-full h-48 rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 shadow-inner">
-          <iframe 
-            title="Kiltaş Beton Fabrika Konumu"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102000!2d38.75!3d37.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDE1JzAwLjAiTiAzOMKwNDUnMDAuMCJF!5e0!3m2!1str!2str!4v1600000000000!5m2!1str!2str" 
-            width="100%" 
-            height="100%" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy">
-          </iframe>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Telif Bilgisi -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500">
-      <div>© 2026 Kiltaş Beton. Tüm Hakları Saklıdır.</div>
-      <div class="mt-2 sm:mt-0">Şanlıurfa Kilit Parke Taşı ve Bordür Fabrikası</div>
-    </div>
-  </footer>
-
-  <!-- ==================== MOBİL SABİT AKSİYON BARI ==================== -->
-  <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-2.5 flex items-center justify-around z-50 md:hidden shadow-lg">
-    <a href="tel:+905425899300" class="flex-1 bg-slate-900 text-white text-center py-2.5 rounded-lg text-xs font-bold mr-2 flex items-center justify-center space-x-1.5">
-      <i class="fa-solid fa-phone text-amber-400"></i>
-      <span>Mahmut Arslan'ı Ara</span>
-    </a>
-    <a href="https://wa.me/905425899300?text=Merhaba%20Mahmut%20Bey,%20kilit%20taşı%20fiyat%20teklifi%20almak%20istiyorum." target="_blank" class="flex-1 bg-emerald-600 text-white text-center py-2.5 rounded-lg text-xs font-bold flex items-center justify-center space-x-1.5">
-      <i class="fa-brands fa-whatsapp text-sm"></i>
-      <span>WhatsApp Teklif</span>
-    </a>
-  </div>
-
-  <!-- Masaüstü Sabit WhatsApp Butonu -->
-  <a href="https://wa.me/905425899300?text=Merhaba%20Mahmut%20Bey,%20kilit%20taşı%20fiyat%20teklifi%20almak%20istiyorum." target="_blank" class="hidden md:flex fixed bottom-6 right-6 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full shadow-2xl items-center justify-center text-2xl z-50 transition transform hover:scale-110">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
-
-  <!-- ==================== JAVASCRIPT ==================== -->
-  <script>
-    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    mobileMenuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-
-    document.querySelectorAll('.mobile-link').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-      });
-    });
-
-    const calcInput = document.getElementById('calcInput');
-    const calcUsage = document.getElementById('calcUsage');
-    const resPalet = document.getElementById('resPalet');
-    const resAdet = document.getElementById('resAdet');
-    const resSevkiyat = document.getElementById('resSevkiyat');
-    const calcWaBtn = document.getElementById('calcWaBtn');
-
-    function calculate() {
-      let m2 = parseFloat(calcInput.value) || 0;
-      if (m2 < 0) m2 = 0;
-
-      const paletSayisi = Math.ceil(m2 / 11.5);
-      const adetSayisi = Math.round(m2 * 36);
-      const kalinlik = calcUsage.value;
-
-      resPalet.textContent = paletSayisi + " Palet";
-      resAdet.textContent = "~" + adetSayisi.toLocaleString('tr-TR') + " Adet";
-
-      if (m2 > 300) {
-        resSevkiyat.textContent = "Bozova yolu fabrikamızdan vinçli araçla doğrudan şantiyenize sevk edilir.";
-      } else {
-        resSevkiyat.textContent = "Günlük hazır stoklarımızdan vinçli kamyonla derhal sevk edilir.";
-      }
-
-      const mesaj = `Merhaba Mahmut Bey, ${m2} m² (${paletSayisi} palet, ${kalinlik} cm) kilit taşı için güncel fabrika teslim fiyat teklifi almak istiyorum.`;
-      calcWaBtn.href = `https://wa.me/905425899300?text=${encodeURIComponent(mesaj)}`;
-    }
-
-    calcInput.addEventListener('input', calculate);
-    calcUsage.addEventListener('change', calculate);
-    calculate();
-  </script>
-
+    <!-- WhatsApp Sabit Buton -->
+    <a href="https://wa.me/905531662731" class="whatsapp-fixed" title="WhatsApp İletişim">💬</a>
 </body>
 </html>
